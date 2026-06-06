@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://bsj42ct1ocxt"]
+[gd_scene format=3 uid="uid://c81pt8pbxwjsu"]
 
-[ext_resource type="MeshLibrary" uid="uid://cct8bnpfrligt" path="res://mesh_library_sewer.tres" id="1_olpnp"]
-[ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="1_spoxl"]
+[ext_resource type="MeshLibrary" uid="uid://cct8bnpfrligt" path="res://mesh_library_sewer.tres" id="1_qfi8n"]
+[ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_gunfr"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_olpnp"]
 
@@ -13,7 +13,7 @@ material = SubResource("StandardMaterial3D_uhqqe")
 size = Vector2(100, 100)
 
 [node name="GridMap" type="GridMap" unique_id=384402464]
-mesh_library = ExtResource("1_olpnp")
+mesh_library = ExtResource("1_qfi8n")
 cell_size = Vector3(4, 4, 4)
 data = {
 "cells": PackedInt32Array(65535, 65533, 3)
@@ -41,5 +41,5 @@ transform = Transform3D(1, 0, 0, 0, -0.34724668, 0.9377738, 0, -0.9377738, -0.34
 visible = false
 sky_mode = 1
 
-[node name="Player" parent="." unique_id=81183360 instance=ExtResource("1_spoxl")]
+[node name="Player" parent="." unique_id=81183360 instance=ExtResource("2_gunfr")]
 transform = Transform3D(-0.0135781765, 0, 0.9999079, 0, 1, 0, -0.9999079, 0, -0.0135781765, -1.7899771, 1.9931066, -10.000075)
