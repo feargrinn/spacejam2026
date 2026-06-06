@@ -1,5 +1,7 @@
 class_name Player extends CharacterBody3D
 
+signal tried_interacting
+
 @export_range(1, 35, 1) var speed: float = 10 # m/s
 @export_range(10, 400, 1) var acceleration: float = 100 # m/s^2
 
@@ -28,6 +30,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		look_dir = event.relative * 0.001
 		if mouse_captured: _rotate_camera()
 	if Input.is_action_just_pressed(&"exit"): get_tree().quit()
+	if Input.is_action_just_pressed("interact"):
+		tried_interacting.emit()
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed(&"jump"): jumping = true

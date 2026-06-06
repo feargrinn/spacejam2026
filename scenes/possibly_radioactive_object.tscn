@@ -2,16 +2,21 @@
 
 [ext_resource type="AudioStream" uid="uid://c55e7um2v7q0w" path="res://assets/radiation_sound.mp3" id="1_m3axs"]
 [ext_resource type="Script" uid="uid://dh6vagxv8vbqa" path="res://scenes/possibly_radioactive_object.gd" id="1_phjq4"]
+[ext_resource type="Script" uid="uid://j74fopjeymgt" path="res://scripts/interactible.gd" id="3_tffqk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e1qsd"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_m3axs"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_phjq4"]
+radius = 1.0
 
 [node name="PossiblyRadioactiveObject" type="Node3D" unique_id=1969775759]
 script = ExtResource("1_phjq4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=251427347]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=573261307]
 shape = SubResource("BoxShape3D_e1qsd")
@@ -24,3 +29,11 @@ stream = ExtResource("1_m3axs")
 autoplay = true
 bus = &"SFX"
 parameters/looping = true
+
+[node name="Interactible" type="Area3D" parent="." unique_id=508302069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+monitorable = false
+script = ExtResource("3_tffqk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactible" unique_id=1984150702]
+shape = SubResource("SphereShape3D_phjq4")
