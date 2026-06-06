@@ -1,7 +1,7 @@
 class_name PossiblyRadioactiveObject
 extends Node3D
 
-var _radioactive_object_data: RadioactiveObject
+@export var _radioactive_object_data: RadioactiveObject
 var sarcophagi_count := 0
 var sarcophagi: Array[MeshInstance3D]
 

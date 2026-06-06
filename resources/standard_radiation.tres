@@ -7,4 +7,5 @@
 script = ExtResource("1_dfy16")
 name = "standard"
 audio_file = ExtResource("1_prpqt")
+falloff = 1.0
 metadata/_custom_type_script = "uid://2svhaaogfqvp"

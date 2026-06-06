@@ -10,7 +10,20 @@ static var radiation_resource_by_type: Dictionary[RadiationTypeEnum, RadiatonTyp
 }
 
 @export var radiation_type: RadiationTypeEnum
+@export var beep_frequency: float # beeps per second
+
+var radiation_res: RadiatonType
+
+
+func _init() -> void:
+	radiation_res = radiation_resource_by_type[radiation_type]
 
 
 func get_audio() -> AudioStream:
-	return radiation_resource_by_type[radiation_type].audio_file
+	return radiation_res.audio_file
+
+
+func calculate_beep_frequency(distance: float) -> float:
+	# Sure lets assume that this is linear for now
+	var divider := distance * radiation_res.falloff
+	return beep_frequency / divider
