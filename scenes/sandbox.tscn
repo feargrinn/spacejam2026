@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cr3ybk4inoxs8" path="res://scripts/sub_viewport_container.gd" id="1_a8pr3"]
 [ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="1_rgld7"]
 [ext_resource type="Material" uid="uid://bok1camfpa3l3" path="res://assets/prototype_dark.material" id="2_a8pr3"]
+[ext_resource type="Texture2D" uid="uid://cydlx6mkjby6" path="res://assets/geiger_counter.png" id="4_j6lu3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yxtyg"]
 
@@ -13,7 +14,14 @@ sky_material = SubResource("ProceduralSkyMaterial_yxtyg")
 background_mode = 2
 sky = SubResource("Sky_edr0k")
 
-[node name="Main" type="Node3D" unique_id=1973122174]
+[sub_resource type="QuadMesh" id="QuadMesh_tpt06"]
+size = Vector2(364, 750)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_16ffl"]
+transparency = 1
+albedo_texture = ExtResource("4_j6lu3")
+
+[node name="Main" type="Node" unique_id=457065144]
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1376881548]
 texture_filter = 1
@@ -24,13 +32,13 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 stretch = true
-stretch_shrink = 4
+stretch_shrink = 2
 script = ExtResource("1_a8pr3")
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=2046322874]
 handle_input_locally = false
 physics_object_picking = true
-size = Vector2i(288, 162)
+size = Vector2i(320, 240)
 render_target_update_mode = 4
 
 [node name="World" type="Node3D" parent="SubViewportContainer/SubViewport" unique_id=2089495761]
@@ -127,3 +135,8 @@ material = ExtResource("2_a8pr3")
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 5, 13)
 size = Vector3(1, 11, 27)
 material = ExtResource("2_a8pr3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1476530502]
+transform = Transform3D(0.0019733266, -0.00032554986, 0, 0.00032554986, 0.0019733266, 0, 0, 0, 0.002, -1.905, -1.748, -2.07)
+mesh = SubResource("QuadMesh_tpt06")
+surface_material_override/0 = SubResource("StandardMaterial3D_16ffl")
