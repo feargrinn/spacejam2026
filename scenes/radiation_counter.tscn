@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cvtfjonxbxjy2"]
+
+[ext_resource type="Script" uid="uid://c7pf8qo7np7y2" path="res://scripts/radiation_counter.gd" id="1_s6bvs"]
+
+[node name="RadiationCounter" type="VBoxContainer" unique_id=484867935]
+custom_minimum_size = Vector2(0, 70)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -500.0
+offset_right = 500.0
+offset_bottom = 31.0
+grow_horizontal = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+script = ExtResource("1_s6bvs")
+
+[node name="Label" type="Label" parent="." unique_id=251353881]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+text = "Radiation"
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1822610241]
+layout_mode = 2
+size_flags_vertical = 3
+value = 50.0
+show_percentage = false
