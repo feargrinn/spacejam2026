@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://bgkuk3j3y7s0o"]
+
+[ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="1_ndiqr"]
+[ext_resource type="Material" uid="uid://bok1camfpa3l3" path="res://assets/prototype_dark.material" id="2_gaqdb"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yxtyg"]
+
+[sub_resource type="Sky" id="Sky_edr0k"]
+sky_material = SubResource("ProceduralSkyMaterial_yxtyg")
+
+[sub_resource type="Environment" id="Environment_k5onh"]
+background_mode = 2
+sky = SubResource("Sky_edr0k")
+
+[node name="Main" type="Node3D" unique_id=1973122174]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1376881548]
+offset_right = 512.0
+offset_bottom = 512.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=2046322874]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="World" type="Node3D" parent="SubViewportContainer/SubViewport" unique_id=2089495761]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer/SubViewport/World" unique_id=1334540112]
+environment = SubResource("Environment_k5onh")
+
+[node name="DirectionalLight3d" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport/World/WorldEnvironment" unique_id=963836097]
+transform = Transform3D(-0.678961, 0.262875, -0.685499, -0.027831, 0.923814, 0.38183, 0.733646, 0.278326, -0.619918, 0, 6.83834, 0)
+shadow_enabled = true
+
+[node name="Player" parent="SubViewportContainer/SubViewport/World" unique_id=963730356 instance=ExtResource("1_ndiqr")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 5, 4.5, 5)
+
+[node name="Platform" type="CSGCombiner3D" parent="SubViewportContainer/SubViewport/World" unique_id=1209004838]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=2090335521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+size = Vector3(25, 0.5, 25)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=810696385]
+transform = Transform3D(1, 0, 0, 0, 0.939693, 0.34202, 0, -0.34202, 0.939693, 10, -0.277339, -5.23999)
+size = Vector3(5, 5, 14)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=1970715143]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 2, 6.5)
+size = Vector3(12, 5, 12)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=282518816]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 4, 6.5)
+size = Vector3(6, 1, 12)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=865721004]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, 9)
+size = Vector3(5, 1, 5)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=1500837193]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1.5, 1)
+size = Vector3(1, 4, 1)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=2013309107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1.5, 12)
+size = Vector3(1, 4, 1)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=1024306276]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 2, -0.5)
+size = Vector3(2, 5, 2)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=1452822778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, -0.5)
+size = Vector3(2, 4, 2)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=1273194725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 1, -0.5)
+size = Vector3(2, 3, 2)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=1860801801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, -0.5)
+size = Vector3(2, 2, 2)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=618487329]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -2.5)
+size = Vector3(2, 1, 2)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=2061057859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 5, 0)
+size = Vector3(1, 11, 25)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=1429944012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 2, 0)
+size = Vector3(1, 5, 25)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=936057152]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 2, -13)
+size = Vector3(1, 5, 27)
+material = ExtResource("2_gaqdb")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="SubViewportContainer/SubViewport/World/Platform" unique_id=1304868736]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 5, 13)
+size = Vector3(1, 11, 27)
+material = ExtResource("2_gaqdb")
