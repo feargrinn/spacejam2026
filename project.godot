@@ -15,6 +15,10 @@ run/main_scene="uid://2r2xorepwlip"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://321ghm1l653k"
+
 [input]
 
 move_left={

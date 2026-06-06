@@ -22,4 +22,5 @@ mesh = SubResource("BoxMesh_m3axs")
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=8560979]
 stream = ExtResource("1_m3axs")
 autoplay = true
+bus = &"SFX"
 parameters/looping = true
