@@ -29,7 +29,6 @@ script = ExtResource("1_a8pr3")
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=2046322874]
 handle_input_locally = false
-texture_mipmap_bias = 0.0
 physics_object_picking = true
 size = Vector2i(288, 162)
 render_target_update_mode = 4
