@@ -1,12 +1,12 @@
-[gd_scene format=3 uid="uid://cosewsxakxwin"]
+[gd_scene format=3 uid="uid://cdrbb3v3hbeu"]
 
-[ext_resource type="MeshLibrary" uid="uid://cct8bnpfrligt" path="res://mesh_library_sewer.tres" id="1_bjgrc"]
-[ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_fud11"]
-[ext_resource type="PackedScene" uid="uid://bu547b6icqehh" path="res://scenes/possibly_radioactive_object.tscn" id="3_fud11"]
-[ext_resource type="Resource" uid="uid://bhp30m83703xn" path="res://resources/standard_radioactive_object.tres" id="4_f7xec"]
+[ext_resource type="MeshLibrary" uid="uid://cct8bnpfrligt" path="res://mesh_library_sewer.tres" id="1_djdqn"]
+[ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_tct44"]
+[ext_resource type="PackedScene" uid="uid://bu547b6icqehh" path="res://scenes/possibly_radioactive_object.tscn" id="3_e8ep2"]
+[ext_resource type="Resource" uid="uid://bhp30m83703xn" path="res://resources/standard_radioactive_object.tres" id="4_0atve"]
 
 [node name="Lvl1" type="GridMap" unique_id=384402464]
-mesh_library = ExtResource("1_bjgrc")
+mesh_library = ExtResource("1_djdqn")
 cell_size = Vector3(4, 4, 4)
 data = {
 "cells": PackedInt32Array(65535, 65533, 3, 65534, 65533, 1441792, 65533, 65533, 1441792, 65531, 65532, 1048578, 65531, 65533, 655364, 65531, 65534, 655362, 65532, 65532, 2, 65532, 65533, 1441793, 65532, 65534, 1441794)
@@ -21,9 +21,9 @@ omni_range = 100.0
 transform = Transform3D(1, 0, 0, 0, -0.34724668, 0.9377738, 0, -0.9377738, -0.34724668, 0, 7.9966507, 0)
 sky_mode = 1
 
-[node name="Player" parent="." unique_id=81183360 instance=ExtResource("2_fud11")]
+[node name="Player" parent="." unique_id=81183360 instance=ExtResource("2_tct44")]
 transform = Transform3D(-0.0135781765, 0, 0.9999079, 0, 1, 0, -0.9999079, 0, -0.0135781765, -1.7899771, 1.9931066, -10.000075)
 
-[node name="PossiblyRadioactiveObject" parent="." unique_id=1969775759 instance=ExtResource("3_fud11")]
+[node name="PossiblyRadioactiveObject" parent="." unique_id=1969775759 instance=ExtResource("3_e8ep2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.310133, 2, -6.498954)
-_radioactive_object_data = ExtResource("4_f7xec")
+_radioactive_object_data = ExtResource("4_0atve")
