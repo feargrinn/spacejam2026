@@ -44,11 +44,8 @@ transform = Transform3D(0.99996, 0.007778775, 0.004409211, -0.0077692466, 0.9999
 transform = Transform3D(0.99996, 0.007778775, 0.004409211, -0.0077692466, 0.99996746, -0.002173175, -0.0044259797, 0.0021388163, 0.9999879, -22.13958, 2, -15.517608)
 
 [node name="rag" parent="." unique_id=2049741541 instance=ExtResource("6_k7rk7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.99517, 2.0000005, 14.929703)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.272522, 2.0000005, 12.378088)
 _radioactive_object_data = ExtResource("4_k7rk7")
-
-[node name="rag2" parent="." unique_id=86771364 instance=ExtResource("6_k7rk7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.99517, 3.2542577, 14.929703)
 
 [node name="cat" parent="." unique_id=809853421 instance=ExtResource("6_tcqpp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.194801, 2, -29.06675)
