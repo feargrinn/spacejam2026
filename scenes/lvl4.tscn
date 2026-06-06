@@ -48,23 +48,18 @@ _radioactive_object_data = ExtResource("4_k7rk7")
 
 [node name="book8" parent="." unique_id=341343041 instance=ExtResource("5_k7rk7")]
 transform = Transform3D(0.83749944, 0, -0.54643816, 0, 1, 0, 0.54643816, 0, 0.83749944, -38.137077, 2, -5.1943755)
-_radioactive_object_data = ExtResource("4_k7rk7")
 
 [node name="book9" parent="." unique_id=696447300 instance=ExtResource("5_k7rk7")]
 transform = Transform3D(0.83749944, 0, -0.54643816, 0, 1, 0, 0.54643816, 0, 0.83749944, -37.526314, 2, -13.723639)
-_radioactive_object_data = ExtResource("4_k7rk7")
 
 [node name="book10" parent="." unique_id=1520112950 instance=ExtResource("5_k7rk7")]
 transform = Transform3D(0.65105253, 0, -0.75903285, 0, 1, 0, 0.75903285, 0, 0.65105253, -38.640488, 2, -14.080793)
-_radioactive_object_data = ExtResource("4_k7rk7")
 
 [node name="book11" parent="." unique_id=327550113 instance=ExtResource("5_k7rk7")]
 transform = Transform3D(0.65105253, 0, -0.75903285, 0, 1, 0, 0.75903285, 0, 0.65105253, -45.025776, 1.9999981, -9.689705)
-_radioactive_object_data = ExtResource("4_k7rk7")
 
 [node name="book12" parent="." unique_id=1597610478 instance=ExtResource("5_k7rk7")]
 transform = Transform3D(0.65105253, 0, -0.75903285, 0, 1, 0, 0.75903285, 0, 0.65105253, -29.038712, 1.9999962, 5.96931)
-_radioactive_object_data = ExtResource("4_k7rk7")
 
 [node name="book3" parent="." unique_id=1570773596 instance=ExtResource("5_k7rk7")]
 transform = Transform3D(0.33459654, 0, -0.9423616, 0, 1, 0, 0.9423616, 0, 0.33459654, -21.934364, 2, -7.1919785)
