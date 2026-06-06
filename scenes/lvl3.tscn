@@ -2,44 +2,34 @@
 
 [ext_resource type="MeshLibrary" uid="uid://cct8bnpfrligt" path="res://mesh_library_sewer.tres" id="1_qfi8n"]
 [ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_gunfr"]
-
-[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_olpnp"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uhqqe"]
-albedo_color = Color(0.3180198, 0.31801978, 0.31801975, 1)
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_0jtq1"]
-material = SubResource("StandardMaterial3D_uhqqe")
-size = Vector2(100, 100)
+[ext_resource type="PackedScene" uid="uid://bu547b6icqehh" path="res://scenes/possibly_radioactive_object.tscn" id="3_qe4d8"]
+[ext_resource type="Resource" uid="uid://bhp30m83703xn" path="res://resources/standard_radioactive_object.tres" id="4_br341"]
 
 [node name="GridMap" type="GridMap" unique_id=384402464]
 mesh_library = ExtResource("1_qfi8n")
 cell_size = Vector3(4, 4, 4)
 data = {
-"cells": PackedInt32Array(65535, 65533, 3)
+"cells": PackedInt32Array(65535, 65533, 3, 65534, 65533, 1441792, 65533, 65533, 1441792, 65532, 65532, 2, 65532, 65533, 1441793, 65532, 65534, 1441794, 65530, 65532, 1048578, 65530, 65534, 655362, 65531, 65533, 1441793, 65531, 65534, 1441796, 65531, 65532, 1048580, 65524, 65532, 1048578, 65524, 65533, 655364, 65524, 65534, 655362, 65525, 65532, 1048580, 65525, 65533, 1441793, 65526, 65532, 2, 65526, 65534, 1441794, 65520, 3, 1048578, 65520, 4, 655364, 65520, 5, 655362, 65521, 3, 1048580, 65521, 4, 1441793, 65521, 5, 1441796, 65522, 3, 2, 65522, 5, 1441794, 65529, 65533, 1048576, 65528, 65533, 1048576, 65527, 65533, 1048576, 65523, 4, 1048576, 65525, 65535, 0, 65525, 0, 0, 65525, 1, 0, 65525, 2, 0, 65525, 3, 0, 65524, 4, 1441792, 65525, 4, 1441794, 65530, 65533, 1441793, 65526, 65533, 1441793, 65525, 65534, 1441793, 65522, 4, 1441793)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=970773439]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
-visible = false
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2091206798]
-shape = SubResource("WorldBoundaryShape3D_olpnp")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=2142175530]
-transform = Transform3D(1.0043689, 0, 0, 0, 1.0043689, 0, 0, 0, 1.0043689, 0, 0, 0)
-mesh = SubResource("PlaneMesh_0jtq1")
-
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=154678555]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
-visible = false
 omni_range = 100.0
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=953112286]
 transform = Transform3D(1, 0, 0, 0, -0.34724668, 0.9377738, 0, -0.9377738, -0.34724668, 0, 7.9966507, 0)
-visible = false
 sky_mode = 1
 
 [node name="Player" parent="." unique_id=81183360 instance=ExtResource("2_gunfr")]
 transform = Transform3D(-0.0135781765, 0, 0.9999079, 0, 1, 0, -0.9999079, 0, -0.0135781765, -1.7899771, 1.9931066, -10.000075)
+
+[node name="PossiblyRadioactiveObject" parent="." unique_id=1969775759 instance=ExtResource("3_qe4d8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.310133, 2, -6.498954)
+
+[node name="PossiblyRadioactiveObject2" parent="." unique_id=700428216 instance=ExtResource("3_qe4d8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.310133, 2, -13.299142)
+
+[node name="PossiblyRadioactiveObject3" parent="." unique_id=2026834808 instance=ExtResource("3_qe4d8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.648827, 2, 18.462952)
+_radioactive_object_data = ExtResource("4_br341")
