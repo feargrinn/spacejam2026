@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://bu547b6icqehh"]
 
 [ext_resource type="AudioStream" uid="uid://c55e7um2v7q0w" path="res://assets/radiation_sound.mp3" id="1_m3axs"]
+[ext_resource type="Script" uid="uid://dh6vagxv8vbqa" path="res://scenes/possibly_radioactive_object.gd" id="1_phjq4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e1qsd"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_m3axs"]
 
 [node name="PossiblyRadioactiveObject" type="Node3D" unique_id=1969775759]
+script = ExtResource("1_phjq4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=251427347]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
