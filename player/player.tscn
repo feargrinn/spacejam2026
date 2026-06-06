@@ -1,10 +1,20 @@
 [gd_scene format=3 uid="uid://cdk6hwb4hi2wc"]
 
 [ext_resource type="Script" uid="uid://30ufvxtwl00t" path="res://player/player.gd" id="1_oul6g"]
+[ext_resource type="Shader" uid="uid://bph2h57ovfmgi" path="res://shaders/outline.gdshader" id="2_rkbax"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3rsb5"]
 radius = 0.3
 height = 1.8
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g1dw6"]
+render_priority = 0
+shader = ExtResource("2_rkbax")
+
+[sub_resource type="QuadMesh" id="QuadMesh_yw30f"]
+material = SubResource("ShaderMaterial_g1dw6")
+flip_faces = true
+size = Vector2(2, 2)
 
 [node name="Player" type="CharacterBody3D" unique_id=81183360]
 script = ExtResource("1_oul6g")
@@ -17,3 +27,9 @@ debug_color = Color(0.141176, 0.427451, 0.92549, 0.784314)
 [node name="Camera" type="Camera3D" parent="." unique_id=1231542724]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 fov = 80.0
+
+[node name="PostProcessing" type="MeshInstance3D" parent="Camera" unique_id=428672683]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24044466, -0.23389316, -0.7805049)
+visible = false
+extra_cull_margin = 16384.0
+mesh = SubResource("QuadMesh_yw30f")
