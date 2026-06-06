@@ -12,7 +12,7 @@ albedo_color = Color(0.3180198, 0.31801978, 0.31801975, 1)
 material = SubResource("StandardMaterial3D_uhqqe")
 size = Vector2(100, 100)
 
-[node name="Lvl1" type="GridMap" unique_id=384402464]
+[node name="GridMap" type="GridMap" unique_id=384402464]
 mesh_library = ExtResource("1_olpnp")
 cell_size = Vector3(4, 4, 4)
 data = {
