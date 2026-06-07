@@ -7,7 +7,11 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e1qsd"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ip7c"]
+albedo_color = Color(0, 0.91764706, 0.105882354, 1)
+
 [sub_resource type="SphereMesh" id="SphereMesh_2ip7c"]
+material = SubResource("StandardMaterial3D_2ip7c")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_phjq4"]
 radius = 1.0
