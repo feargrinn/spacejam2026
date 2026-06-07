@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cyf6ky5v0582i"
-path="res://.godot/imported/hall_ww_ew.blend-7f9aab9c9c0a5447d5a513cd249e139c.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/blender/parts/hall_ww_ew.blend"
-dest_files=["res://.godot/imported/hall_ww_ew.blend-7f9aab9c9c0a5447d5a513cd249e139c.scn"]
 
 [params]
 

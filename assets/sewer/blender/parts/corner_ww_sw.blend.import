@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dlh6ggp1s1xq4"
-path="res://.godot/imported/corner_ww_sw.blend-55b702975c4fbcc97de17b8633936d4a.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/blender/parts/corner_ww_sw.blend"
-dest_files=["res://.godot/imported/corner_ww_sw.blend-55b702975c4fbcc97de17b8633936d4a.scn"]
 
 [params]
 

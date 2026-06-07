@@ -1,19 +1,638 @@
-[gd_scene format=3 uid="uid://cvsfktqxsohbw"]
+[gd_scene format=4 uid="uid://h4wurnqpfyt"]
 
-[ext_resource type="PackedScene" uid="uid://cyxkbbuy4aedu" path="res://assets/sewer/koniec_korytarza.glb" id="1_tfgot"]
-[ext_resource type="PackedScene" uid="uid://c2iiv7hdbjewa" path="res://assets/sewer/korytarz.glb" id="2_g4qob"]
-[ext_resource type="PackedScene" uid="uid://ccdnmq15v8kpx" path="res://assets/sewer/pokoj.glb" id="3_ut7p8"]
-[ext_resource type="PackedScene" uid="uid://coal3gydh1ak3" path="res://assets/sewer/rog_pokoju.glb" id="4_y86jy"]
-[ext_resource type="PackedScene" uid="uid://bp1sgwvxo20bp" path="res://assets/sewer/t_section.glb" id="5_ks3te"]
+[ext_resource type="Texture2D" uid="uid://loxpdmfsex77" path="res://assets/sewer/korytarz_ceiling_color.png" id="1_m8c2x"]
+[ext_resource type="Texture2D" uid="uid://b12oubd7eqhf6" path="res://assets/sewer/koniec_korytarza_wall_color.png" id="1_mathi"]
+[ext_resource type="Texture2D" uid="uid://dkgvdhyxntkj6" path="res://assets/sewer/koniec_korytarza_wall_rough.png" id="2_ielvk"]
+[ext_resource type="Texture2D" uid="uid://63xlpuvi7wfi" path="res://assets/sewer/korytarz_ceiling_rough.png" id="2_r63xs"]
+[ext_resource type="Texture2D" uid="uid://pwfjwh1e8au5" path="res://assets/sewer/koniec_korytarza_wall_normal.png" id="3_h4cud"]
+[ext_resource type="Texture2D" uid="uid://b30dfq3r0pj7b" path="res://assets/sewer/korytarz_ceiling_normal.png" id="3_hq8y1"]
+[ext_resource type="Texture2D" uid="uid://dxprll8nr3ll6" path="res://assets/sewer/korytarz_wall_color.png" id="4_c8jjq"]
+[ext_resource type="Texture2D" uid="uid://8bbxp16xadj" path="res://assets/sewer/koniec_korytarza_floor_color.png" id="4_qhtt5"]
+[ext_resource type="Texture2D" uid="uid://b6jyaxwfbbicg" path="res://assets/sewer/koniec_korytarza_floor_rough.png" id="5_ky3vg"]
+[ext_resource type="Texture2D" uid="uid://52hcyfs4orkg" path="res://assets/sewer/korytarz_wall_rough.png" id="5_riyo6"]
+[ext_resource type="Texture2D" uid="uid://cxwhsfyh37l1u" path="res://assets/sewer/koniec_korytarza_floor_normal.png" id="6_12idi"]
+[ext_resource type="Texture2D" uid="uid://0pmrhnbmbcfr" path="res://assets/sewer/korytarz_wall_normal.png" id="6_273qy"]
+[ext_resource type="Texture2D" uid="uid://byj603o0ll03d" path="res://assets/sewer/koniec_korytarza_ceiling_color.png" id="7_g6as8"]
+[ext_resource type="Texture2D" uid="uid://dwx8cguqu8xwd" path="res://assets/sewer/korytarz_floor_color.png" id="7_m1fwg"]
+[ext_resource type="Texture2D" uid="uid://bjancxvkjx8t5" path="res://assets/sewer/koniec_korytarza_ceiling_rough.png" id="8_6wnrw"]
+[ext_resource type="Texture2D" uid="uid://dw2t410c32gsu" path="res://assets/sewer/korytarz_floor_rough.png" id="8_ohknk"]
+[ext_resource type="Texture2D" uid="uid://dupsirfagr6g2" path="res://assets/sewer/korytarz_floor_normal.png" id="9_hufab"]
+[ext_resource type="Texture2D" uid="uid://c5bfo8dtp1hj5" path="res://assets/sewer/koniec_korytarza_ceiling_normal.png" id="9_m8c2x"]
+[ext_resource type="Texture2D" uid="uid://ct0hrr7jdnn52" path="res://assets/sewer/pokoj_ceiling_color.png" id="10_5tcwn"]
+[ext_resource type="Texture2D" uid="uid://ky5un2cj3cvq" path="res://assets/sewer/pokoj_ceiling_rough.png" id="11_ylqm4"]
+[ext_resource type="Texture2D" uid="uid://bts4pl8ctdwbc" path="res://assets/sewer/pokoj_ceiling_normal.png" id="12_ec412"]
+[ext_resource type="Texture2D" uid="uid://hbuofcnmofe3" path="res://assets/sewer/pokoj_floor_color.png" id="13_lkyiq"]
+[ext_resource type="Texture2D" uid="uid://dxj4robvywpcm" path="res://assets/sewer/pokoj_floor_rough.png" id="14_3hhpn"]
+[ext_resource type="Texture2D" uid="uid://dl6t6jp0j05tq" path="res://assets/sewer/pokoj_floor_normal.png" id="15_usoh5"]
+[ext_resource type="Texture2D" uid="uid://cmhutnoykbyaa" path="res://assets/sewer/rog_pokoju_wall_color.png" id="16_gfiq1"]
+[ext_resource type="Texture2D" uid="uid://b6fikup2ynru5" path="res://assets/sewer/rog_pokoju_wall_rough.png" id="17_ld234"]
+[ext_resource type="Texture2D" uid="uid://cbc2xa2brwxpa" path="res://assets/sewer/rog_pokoju_wall_normal.png" id="18_b563e"]
+[ext_resource type="Texture2D" uid="uid://c8tcwwss3yo27" path="res://assets/sewer/rog_pokoju_ceiling_color.png" id="19_ib2w8"]
+[ext_resource type="Texture2D" uid="uid://df42x8o4neig2" path="res://assets/sewer/rog_pokoju_ceiling_rough.png" id="20_h3ufl"]
+[ext_resource type="Texture2D" uid="uid://bv3786kf0513w" path="res://assets/sewer/rog_pokoju_ceiling_normal.png" id="21_lqh7c"]
+[ext_resource type="Texture2D" uid="uid://e7dyinfcd33g" path="res://assets/sewer/rog_pokoju_floor_color.png" id="22_c0w03"]
+[ext_resource type="Texture2D" uid="uid://sypsjjisjvrl" path="res://assets/sewer/rog_pokoju_floor_rough.png" id="23_tjsbv"]
+[ext_resource type="Texture2D" uid="uid://cmhe44xop5qs7" path="res://assets/sewer/rog_pokoju_floor_normal.png" id="24_mwbfq"]
+[ext_resource type="Texture2D" uid="uid://bop08tfdhr0jt" path="res://assets/sewer/t_section_ceiling_color.png" id="34_1t1oe"]
+[ext_resource type="Texture2D" uid="uid://lwvqhmdbykgq" path="res://assets/sewer/t_section_ceiling_rough.png" id="35_okv5w"]
+[ext_resource type="Texture2D" uid="uid://w737tmbvd62n" path="res://assets/sewer/t_section_ceiling_normal.png" id="36_kww8x"]
+[ext_resource type="Texture2D" uid="uid://f0sfd5hvjcf0" path="res://assets/sewer/t_section_floor_color.png" id="37_md0tt"]
+[ext_resource type="Texture2D" uid="uid://cd5serx0k5htl" path="res://assets/sewer/t_section_floor_rough.png" id="38_on4v0"]
+[ext_resource type="Texture2D" uid="uid://baqq4prx5rkj" path="res://assets/sewer/t_section_floor_normal.png" id="39_fqxgx"]
+[ext_resource type="Texture2D" uid="uid://dw2lu0wuxx5jw" path="res://assets/sewer/t_section_wall_color.png" id="40_mn1pe"]
+[ext_resource type="Texture2D" uid="uid://cfq2rm07exht6" path="res://assets/sewer/t_section_wall_rough.png" id="41_7h278"]
+[ext_resource type="Texture2D" uid="uid://btykqi2deou17" path="res://assets/sewer/t_section_wall_normal.png" id="42_g0w3i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lgldp"]
+resource_name = "ceiling"
+albedo_texture = ExtResource("1_m8c2x")
+metallic_texture = ExtResource("2_r63xs")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_r63xs")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_hq8y1")
+texture_filter = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4vd4k"]
+resource_name = "wall"
+albedo_texture = ExtResource("4_c8jjq")
+metallic_texture = ExtResource("5_riyo6")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("5_riyo6")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("6_273qy")
+texture_filter = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_32gup"]
+resource_name = "floor"
+albedo_texture = ExtResource("7_m1fwg")
+metallic_texture = ExtResource("8_ohknk")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("8_ohknk")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("9_hufab")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_g2v2p"]
+_surfaces = [{
+"aabb": AABB(-2, 2.5, -2, 4, 1e-05, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "ceiling",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAAAAAAAAAAAA//8AAP//AAA=")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 2.5, 4),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"name": "wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAAAAAAAAAAAAD/////AAD//wAAAAAAAP///////wAA//8AAP//AAD/////AAAAAA==")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 1e-05, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_liotc"]
+resource_name = "korytarz_Plane_002"
+_surfaces = [{
+"aabb": AABB(-2, 2.5, -2, 4, 1e-05, 4),
+"attribute_data": PackedByteArray("AAD/////AAAAAAAA/////w=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_lgldp"),
+"name": "ceiling",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///z///wAAAAD/PwAAAAAAAP8///8AAP///z8AAP9/AAD/fwAA/38AAP9/")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 2.5, 4),
+"attribute_data": PackedByteArray("AAD//////1//////AAD/XwAA//////9f/////wAA/18="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_4vd4k"),
+"name": "wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP///78AAP//AAD/vwAAAAAAAP+/AAD//////7///wAAAAD/v/////////+///8AAP///7//////AAD/v/9/AAD/fwAA/38AAP9/AAD/f////3////9/////f///")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 1e-05, 4),
+"attribute_data": PackedByteArray("AAD/////AAD/////AAAAAA=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_32gup"),
+"name": "floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_g2v2p")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_5tcwn"]
+data = PackedVector3Array(-2, 2.5, 2, 2, 2.5, -2, -2, 2.5, -2, -2, 2.5, 2, 2, 2.5, 2, 2, 2.5, -2, -2, 0, 2, -2, 2.5, -2, -2, 0, -2, -2, 0, 2, -2, 2.5, 2, -2, 2.5, -2, 2, 0, -2, 2, 2.5, 2, 2, 0, 2, 2, 0, -2, 2, 2.5, -2, 2, 2.5, 2, -2, 0, 2, 2, 0, -2, 2, 0, 2, -2, 0, 2, -2, 0, -2, 2, 0, -2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s1do0"]
+resource_name = "ceiling"
+albedo_texture = ExtResource("10_5tcwn")
+metallic_texture = ExtResource("11_ylqm4")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("11_ylqm4")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("12_ec412")
+texture_filter = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ckibg"]
+resource_name = "floor"
+albedo_texture = ExtResource("13_lkyiq")
+metallic_texture = ExtResource("14_3hhpn")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("14_3hhpn")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("15_usoh5")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ckibg"]
+_surfaces = [{
+"aabb": AABB(-2, 0, -2, 4, 1e-05, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_i2l7g"]
+resource_name = "pokoj_Plane"
+_surfaces = [{
+"aabb": AABB(-2, 2.5, -2, 4, 1e-05, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "ceiling",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAAAAAAAAAAAA//8AAP//AAA=")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 1e-05, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ckibg")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2j1g0"]
+resource_name = "pokoj_Plane_001"
+_surfaces = [{
+"aabb": AABB(-2, 2.5, -2, 4, 1e-05, 4),
+"attribute_data": PackedByteArray("AAD/////AAAAAAAA/////w=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_s1do0"),
+"name": "ceiling",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///z///wAAAAD/PwAAAAAAAP8///8AAP///z8AAP9/AAD/fwAA/38AAP9/")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 1e-05, 4),
+"attribute_data": PackedByteArray("AAD/////AAD/////AAAAAA=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_ckibg"),
+"name": "floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_i2l7g")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ylqm4"]
+data = PackedVector3Array(-2, 2.5, 2, 2, 2.5, -2, -2, 2.5, -2, -2, 2.5, 2, 2, 2.5, 2, 2, 2.5, -2, -2, 0, 2, 2, 0, -2, 2, 0, 2, -2, 0, 2, -2, 0, -2, 2, 0, -2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p2wqk"]
+resource_name = "wall"
+albedo_texture = ExtResource("16_gfiq1")
+metallic_texture = ExtResource("17_ld234")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("17_ld234")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("18_b563e")
+texture_filter = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_abym1"]
+resource_name = "ceiling"
+albedo_texture = ExtResource("19_ib2w8")
+metallic_texture = ExtResource("20_h3ufl")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("20_h3ufl")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("21_lqh7c")
+texture_filter = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_87emx"]
+resource_name = "floor"
+albedo_texture = ExtResource("22_c0w03")
+metallic_texture = ExtResource("23_tjsbv")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("23_tjsbv")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("24_mwbfq")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7u4g3"]
+_surfaces = [{
+"aabb": AABB(-1.9999999, 0, -2, 4, 2.5, 4),
+"format": 34896613377,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgABAAQAAgAEAAUA"),
+"name": "wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAP//AAAAAAAAAAD//wAAAAD+//////8AAP7/AAD//wAA")
+}, {
+"aabb": AABB(-2, 2.5, -2, 4, 1e-05, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "ceiling",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAAAAAAAAAAAA//8AAP//AAA=")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 1e-05, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vb4it"]
+resource_name = "rog_pokoju_Plane"
+_surfaces = [{
+"aabb": AABB(-1.9999999, 0, -2, 4, 2.5, 4),
+"attribute_data": PackedByteArray("AAD//////1//////AAD/XwAA//////9f/////wAA/18="),
+"format": 34896613399,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
+"material": SubResource("StandardMaterial3D_p2wqk"),
+"name": "wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAID/////AAAAgP//AAAAAACAAAD//wAAAID//wAAAAD/v/7///////+//v8AAP///7//////AAD/v/9/////f////3////9/////f////3////9/////f///")
+}, {
+"aabb": AABB(-2, 2.5, -2, 4, 1e-05, 4),
+"attribute_data": PackedByteArray("AAD/////AAAAAAAA/////w=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_abym1"),
+"name": "ceiling",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///z///wAAAAD/PwAAAAAAAP8///8AAP///z8AAP9/AAD/fwAA/38AAP9/")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 1e-05, 4),
+"attribute_data": PackedByteArray("AAD/////AAD/////AAAAAA=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_87emx"),
+"name": "floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_7u4g3")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ec412"]
+data = PackedVector3Array(-2, 0, -2, 2, 2.5, -2, 2, 0, -2, -2, 0, -2, -2, 2.5, -2, 2, 2.5, -2, 2, 0, -2, 1.9999, 2.5, 2, 1.9999, 0, 2, 2, 0, -2, 2, 2.5, -2, 1.9999, 2.5, 2, -2, 2.5, 2, 2, 2.5, -2, -2, 2.5, -2, -2, 2.5, 2, 2, 2.5, 2, 2, 2.5, -2, -2, 0, 2, 2, 0, -2, 2, 0, 2, -2, 0, 2, -2, 0, -2, 2, 0, -2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wxt5l"]
+resource_name = "ceiling"
+albedo_texture = ExtResource("7_g6as8")
+metallic_texture = ExtResource("8_6wnrw")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("8_6wnrw")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("9_m8c2x")
+texture_filter = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_genle"]
+resource_name = "floor"
+albedo_texture = ExtResource("4_qhtt5")
+metallic_texture = ExtResource("5_ky3vg")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("5_ky3vg")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("6_12idi")
+texture_filter = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wat6e"]
+resource_name = "wall"
+albedo_texture = ExtResource("1_mathi")
+metallic_texture = ExtResource("2_ielvk")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_ielvk")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_h4cud")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ay1qg"]
+_surfaces = [{
+"aabb": AABB(-2, 2.5, -2, 4, 1e-05, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "ceiling",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAAAAAAAAAAAA//8AAP//AAA=")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 1e-05, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
+}, {
+"aabb": AABB(-2.0000007, 0, -2, 4.000001, 2.5, 4.000001),
+"format": 34896613377,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAABAAUABAAFAAYABwAIAAkABwAKAAgA"),
+"name": "wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 11,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAP//AAAAAAAAAAD//wAAAAD//wAAAAAAAP7////+/wAA/v8AAP7/AAD+/wAA//8AAAAA///+/wAAAAAAAP7/AAD+/////v8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2vwtn"]
+resource_name = "koniec_korytarza_Plane_001"
+_surfaces = [{
+"aabb": AABB(-2, 2.5, -2, 4, 1e-05, 4),
+"attribute_data": PackedByteArray("AAD/////AAAAAAAA/////w=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_wxt5l"),
+"name": "ceiling",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///z///wAAAAD/PwAAAAAAAP8///8AAP///z8AAP9/AAD/fwAA/38AAP9/")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 1e-05, 4),
+"attribute_data": PackedByteArray("AAD/////AAD/////AAAAAA=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_genle"),
+"name": "floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
+}, {
+"aabb": AABB(-2.0000007, 0, -2, 4.000001, 2.5, 4.000001),
+"attribute_data": PackedByteArray("AAD//////1//////AAD/XwAA//////9f/////wAA/18AAP//////X/////8AAP9f"),
+"format": 34896613399,
+"index_count": 18,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkA"),
+"material": SubResource("StandardMaterial3D_wat6e"),
+"name": "wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAAAAAAAAID/////AAAAgP//AAAAAACAAAD//wAAAID//wAAAAD/v/7////+//+//v8AAP7//7//////AAD/v/7/AAD/////AAD///7///8AAAAA/v////7////+/////3////9/////f////3////9/////f////3////9/////f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ay1qg")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_lkyiq"]
+data = PackedVector3Array(-2, 2.5, 2, 2, 2.5, -2, -2, 2.5, -2, -2, 2.5, 2, 2, 2.5, 2, 2, 2.5, -2, -2, 0, 2, 2, 0, -2, 2, 0, 2, -2, 0, 2, -2, 0, -2, 2, 0, -2, -2, 0, -2, 2, 2.5, -2, 2, 0, -2, -2, 0, -2, -2, 2.5, -2, 2, 2.5, -2, 2, 0, -2, 1.9999, 2.5, 1.9999, 1.9999, 0, 1.9999, 2, 0, -2, 2, 2.5, -2, 1.9999, 2.5, 1.9999, 1.9999, 0, 2, -2, 2.5, 1.9999, -2, 0, 1.9999, 1.9999, 0, 2, 1.9999, 2.5, 1.9999, -2, 2.5, 1.9999)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f566q"]
+resource_name = "ceiling"
+albedo_texture = ExtResource("34_1t1oe")
+metallic_texture = ExtResource("35_okv5w")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("35_okv5w")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("36_kww8x")
+texture_filter = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndsyv"]
+resource_name = "floor"
+albedo_texture = ExtResource("37_md0tt")
+metallic_texture = ExtResource("38_on4v0")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("38_on4v0")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("39_fqxgx")
+texture_filter = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5dyus"]
+resource_name = "wall"
+albedo_texture = ExtResource("40_mn1pe")
+metallic_texture = ExtResource("41_7h278")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("41_7h278")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("42_g0w3i")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wockn"]
+_surfaces = [{
+"aabb": AABB(-2, 2.5, -2, 4, 1e-05, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "ceiling",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAAAAAAAAAAAA//8AAP//AAA=")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 1e-05, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
+}, {
+"aabb": AABB(1.9999998, 0, -1.9999999, 1e-05, 2.5, 4),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("GgYAAAAAAAAAAP////8AAA0DAAD//wAAGgb//wAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cqmjx"]
+resource_name = "t_section_Plane_001"
+_surfaces = [{
+"aabb": AABB(-2, 2.5, -2, 4, 1e-05, 4),
+"attribute_data": PackedByteArray("AAD/////AAAAAAAA/////w=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_f566q"),
+"name": "ceiling",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///z///wAAAAD/PwAAAAAAAP8///8AAP///z8AAP9/AAD/fwAA/38AAP9/")
+}, {
+"aabb": AABB(-2, 0, -2, 4, 1e-05, 4),
+"attribute_data": PackedByteArray("AAD/////AAD/////AAAAAA=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_ndsyv"),
+"name": "floor",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
+}, {
+"aabb": AABB(1.9999998, 0, -1.9999999, 1e-05, 2.5, 4),
+"attribute_data": PackedByteArray("AAD//////1//////AAD/Xw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_5dyus"),
+"name": "wall",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("GgYAAAAA/78AAP//////vw0DAAD///+/Ggb//wAA/7//f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_wockn")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_3hhpn"]
+data = PackedVector3Array(-2, 2.5, 2, 2, 2.5, -2, -2, 2.5, -2, -2, 2.5, 2, 2, 2.5, 2, 2, 2.5, -2, -2, 0, 2, 2, 0, -2, 2, 0, 2, -2, 0, 2, -2, 0, -2, 2, 0, -2, 2, 0, -2, 2, 2.5, 2, 2, 0, 2, 2, 0, -2, 2, 2.5, -2, 2, 2.5, 2)
 
 [node name="MeshLibrarySewer" type="Node3D" unique_id=1873699535]
 
-[node name="koniec_korytarza" parent="." unique_id=891215468 instance=ExtResource("1_tfgot")]
+[node name="korytarz" type="MeshInstance3D" parent="." unique_id=596258414]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("ArrayMesh_liotc")
 
-[node name="korytarz" parent="." unique_id=274406997 instance=ExtResource("2_g4qob")]
+[node name="StaticBody3D2" type="StaticBody3D" parent="korytarz" unique_id=1020687782]
 
-[node name="pokoj" parent="." unique_id=1874454338 instance=ExtResource("3_ut7p8")]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="korytarz/StaticBody3D2" unique_id=33113820]
+shape = SubResource("ConcavePolygonShape3D_5tcwn")
 
-[node name="rog_pokoju" parent="." unique_id=453671740 instance=ExtResource("4_y86jy")]
+[node name="pokoj" type="MeshInstance3D" parent="." unique_id=614127651]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+visible = false
+mesh = SubResource("ArrayMesh_2j1g0")
 
-[node name="t_section" parent="." unique_id=449891388 instance=ExtResource("5_ks3te")]
+[node name="StaticBody3D" type="StaticBody3D" parent="pokoj" unique_id=1795109928]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pokoj/StaticBody3D" unique_id=1046865008]
+shape = SubResource("ConcavePolygonShape3D_ylqm4")
+
+[node name="rog_pokoju" type="MeshInstance3D" parent="." unique_id=1876524583]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+visible = false
+mesh = SubResource("ArrayMesh_vb4it")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="rog_pokoju" unique_id=1203713679]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="rog_pokoju/StaticBody3D" unique_id=1667245627]
+shape = SubResource("ConcavePolygonShape3D_ec412")
+
+[node name="koniec_korytarza2" type="MeshInstance3D" parent="." unique_id=714098977]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+visible = false
+mesh = SubResource("ArrayMesh_2vwtn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="koniec_korytarza2" unique_id=823816265]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="koniec_korytarza2/StaticBody3D" unique_id=647667810]
+shape = SubResource("ConcavePolygonShape3D_lkyiq")
+
+[node name="ceiling" type="MeshInstance3D" parent="." unique_id=1181816869]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+visible = false
+mesh = SubResource("ArrayMesh_cqmjx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ceiling" unique_id=1322716256]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ceiling/StaticBody3D" unique_id=596499167]
+shape = SubResource("ConcavePolygonShape3D_3hhpn")

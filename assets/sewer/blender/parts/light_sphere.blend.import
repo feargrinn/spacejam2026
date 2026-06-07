@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dmulpu1pj5hoq"
-path="res://.godot/imported/light_sphere.blend-2d52457ec10d6668f6faddfd03c617c8.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/blender/parts/light_sphere.blend"
-dest_files=["res://.godot/imported/light_sphere.blend-2d52457ec10d6668f6faddfd03c617c8.scn"]
 
 [params]
 

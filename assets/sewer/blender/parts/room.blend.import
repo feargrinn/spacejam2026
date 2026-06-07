@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dolq63nvrfiiv"
-path="res://.godot/imported/room.blend-9561c1cc52a7ca288faf655d9ec00b2f.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/blender/parts/room.blend"
-dest_files=["res://.godot/imported/room.blend-9561c1cc52a7ca288faf655d9ec00b2f.scn"]
 
 [params]
 

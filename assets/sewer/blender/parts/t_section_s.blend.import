@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cv36miysncc40"
-path="res://.godot/imported/t_section_s.blend-4fc3793dedfb8171c4f50ef4e5e2d693.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/blender/parts/t_section_s.blend"
-dest_files=["res://.godot/imported/t_section_s.blend-4fc3793dedfb8171c4f50ef4e5e2d693.scn"]
 
 [params]
 

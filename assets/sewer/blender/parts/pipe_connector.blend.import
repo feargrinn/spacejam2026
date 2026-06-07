@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://yk0ghkkjwmn7"
-path="res://.godot/imported/pipe_connector.blend-b97cf60f3af86b368ca0c27e6e6557b8.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/blender/parts/pipe_connector.blend"
-dest_files=["res://.godot/imported/pipe_connector.blend-b97cf60f3af86b368ca0c27e6e6557b8.scn"]
 
 [params]
 

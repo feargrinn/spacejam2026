@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cpwoqq7dpypjl"]
+
+[ext_resource type="MeshLibrary" uid="uid://cct8bnpfrligt" path="res://mesh_library_sewer.tres" id="1_bunqd"]
+[ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_lgqos"]
+
+[node name="GridMap" type="GridMap" unique_id=629518508]
+mesh_library = ExtResource("1_bunqd")
+cell_size = Vector3(4, 4, 4)
+data = {
+"cells": PackedInt32Array(65523, 65530, 131072, 65535, 65535, 131072, 65535, 65534, 131072, 0, 65533, 1179648)
+}
+
+[node name="Player" parent="." unique_id=81183360 instance=ExtResource("2_lgqos")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.093235, -0.31768656, -2.7921104)

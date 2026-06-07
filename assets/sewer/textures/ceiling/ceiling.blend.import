@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c7f28e2u0v200"
-path="res://.godot/imported/ceiling.blend-6c3129916e32624b8b726c54d0912463.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/textures/ceiling/ceiling.blend"
-dest_files=["res://.godot/imported/ceiling.blend-6c3129916e32624b8b726c54d0912463.scn"]
 
 [params]
 

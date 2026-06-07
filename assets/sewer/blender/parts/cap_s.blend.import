@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d4e8hs5m77gmn"
-path="res://.godot/imported/cap_s.blend-1c736648811a7a8038e58306c9cbbc68.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/blender/parts/cap_s.blend"
-dest_files=["res://.godot/imported/cap_s.blend-1c736648811a7a8038e58306c9cbbc68.scn"]
 
 [params]
 

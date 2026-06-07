@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cjarrmj6dr7hy"
-path="res://.godot/imported/shoes.blend-6f819b928741a0f62b7a5bddcef0ed41.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/shoes.blend"
-dest_files=["res://.godot/imported/shoes.blend-6f819b928741a0f62b7a5bddcef0ed41.scn"]
 
 [params]
 

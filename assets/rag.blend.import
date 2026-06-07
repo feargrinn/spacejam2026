@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dabl1bm4jc13u"
-path="res://.godot/imported/rag.blend-8f0aff366bd82c42980c88a557f57e37.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/rag.blend"
-dest_files=["res://.godot/imported/rag.blend-8f0aff366bd82c42980c88a557f57e37.scn"]
 
 [params]
 

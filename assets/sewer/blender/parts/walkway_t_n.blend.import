@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://gshffpfbjdak"
-path="res://.godot/imported/walkway_t_n.blend-be0887b350538a3b71b2ff69bd49f55f.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/blender/parts/walkway_t_n.blend"
-dest_files=["res://.godot/imported/walkway_t_n.blend-be0887b350538a3b71b2ff69bd49f55f.scn"]
 
 [params]
 

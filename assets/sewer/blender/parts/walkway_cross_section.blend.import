@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dy17qvpre4fir"
-path="res://.godot/imported/walkway_cross_section.blend-ad5afe453137f85324133818dbbb77a8.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/blender/parts/walkway_cross_section.blend"
-dest_files=["res://.godot/imported/walkway_cross_section.blend-ad5afe453137f85324133818dbbb77a8.scn"]
 
 [params]
 

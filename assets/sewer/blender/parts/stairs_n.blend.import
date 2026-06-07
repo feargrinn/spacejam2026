@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://di1xt2fl7wyfx"
-path="res://.godot/imported/stairs_n.blend-a6bb5a86a5d5b444cd109333596e3453.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/blender/parts/stairs_n.blend"
-dest_files=["res://.godot/imported/stairs_n.blend-a6bb5a86a5d5b444cd109333596e3453.scn"]
 
 [params]
 

@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://3x2enga2xged"
-path="res://.godot/imported/pipe_long.blend-077b2c66a71c2b73dc671b841d2af58d.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/sewer/blender/parts/pipe_long.blend"
-dest_files=["res://.godot/imported/pipe_long.blend-077b2c66a71c2b73dc671b841d2af58d.scn"]
 
 [params]
 
