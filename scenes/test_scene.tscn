@@ -4,15 +4,11 @@
 [ext_resource type="Script" uid="uid://cr3ybk4inoxs8" path="res://scripts/sub_viewport_container.gd" id="1_qjeyg"]
 [ext_resource type="PackedScene" uid="uid://bu547b6icqehh" path="res://scenes/possibly_radioactive_object.tscn" id="1_uhqqe"]
 [ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_j8ivh"]
-<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://c35wij5uigcx4" path="res://scenes/possibly_radioactive_shoes.tscn" id="4_3qnke"]
 [ext_resource type="PackedScene" uid="uid://cvtfjonxbxjy2" path="res://scenes/radiation_counter.tscn" id="4_7ddre"]
 [ext_resource type="PackedScene" uid="uid://d2nwskj8ru5je" path="res://scenes/possibly_radioactive_book.tscn" id="5_rnaij"]
 [ext_resource type="PackedScene" uid="uid://dave3xkbacixv" path="res://scenes/possibly_radioactive_rag.tscn" id="6_h3xc6"]
 [ext_resource type="PackedScene" uid="uid://gxsljg46gjre" path="res://scenes/possibly_radioactive_cat.tscn" id="7_h3xc6"]
-=======
-[ext_resource type="PackedScene" uid="uid://bbfkdeguoe2en" path="res://scenes/radiation_counter.tscn" id="4_7ddre"]
->>>>>>> ui
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_6adnx"]
 
@@ -91,15 +87,11 @@ transform = Transform3D(1, 0, 0, 0, -0.34724668, 0.9377738, 0, -0.9377738, -0.34
 sky_mode = 1
 
 [node name="RadiationCounter" parent="." unique_id=484867935 instance=ExtResource("4_7ddre")]
-anchors_preset = 10
-anchor_left = 0.0
-anchor_right = 1.0
-offset_left = 0.0
-offset_right = 0.0
 offset_bottom = 70.0
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=891503130]
 unique_name_in_owner = true
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -118,6 +110,7 @@ size_flags_horizontal = 4
 text = "You win! Yay!"
 
 [node name="PanelContainer2" type="PanelContainer" parent="." unique_id=1513742286]
+unique_name_in_owner = true
 visible = false
 anchors_preset = 8
 anchor_left = 0.5
@@ -135,10 +128,3 @@ grow_vertical = 2
 layout_mode = 2
 size_flags_horizontal = 4
 text = "You lose. Booooo."
-
-[node name="RadiationCounter" parent="." unique_id=484867935 instance=ExtResource("4_7ddre")]
-anchors_preset = 10
-anchor_left = 0.0
-anchor_right = 1.0
-offset_left = 0.0
-offset_right = 0.0
