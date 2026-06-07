@@ -7,6 +7,8 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e1qsd"]
 
+[sub_resource type="SphereMesh" id="SphereMesh_5sch7"]
+
 [sub_resource type="SphereShape3D" id="SphereShape3D_phjq4"]
 radius = 1.0
 
@@ -23,6 +25,11 @@ shape = SubResource("BoxShape3D_e1qsd")
 [node name="Cat" type="MeshInstance3D" parent="StaticBody3D" unique_id=1793736434]
 transform = Transform3D(0.3774033, -0.0034634413, -0.20604557, 0, 0.42993927, -0.0072268937, 0.20607467, 0.006342915, 0.37734997, -0.00039815903, -0.0948289, 2.4318695e-05)
 mesh = ExtResource("2_5sch7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=2067007217]
+unique_name_in_owner = true
+visible = false
+mesh = SubResource("SphereMesh_5sch7")
 
 [node name="Interactible" type="Area3D" parent="." unique_id=508302069]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)

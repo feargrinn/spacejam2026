@@ -9,7 +9,7 @@ var sarcophagi: Array[MeshInstance3D]
 var _is_covered := false
 
 @onready var interactible: Interactible = $Interactible
-@onready var mesh_instance_3d: MeshInstance3D = $StaticBody3D/MeshInstance3D
+@onready var mesh_instance_3d: MeshInstance3D = %MeshInstance3D
 @onready var beep_player: AudioStreamPlayer = $BeepPlayer
 @onready var beep_time: Timer = $BeepTime
 
@@ -74,6 +74,7 @@ func sarcophaguse() -> void:
 	add_child(new_mesh)
 	new_mesh.global_position = mesh_instance_3d.global_position
 	new_mesh.global_basis = mesh_instance_3d.global_basis
+	new_mesh.show()
 	sarcophagi_count += 1
 	stop_radioactivity()
 	for i in range(sarcophagi_count):

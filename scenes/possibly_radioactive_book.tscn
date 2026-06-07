@@ -7,6 +7,8 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e1qsd"]
 
+[sub_resource type="SphereMesh" id="SphereMesh_2ip7c"]
+
 [sub_resource type="SphereShape3D" id="SphereShape3D_phjq4"]
 radius = 1.0
 
@@ -22,6 +24,11 @@ shape = SubResource("BoxShape3D_e1qsd")
 
 [node name="book" parent="StaticBody3D" unique_id=159372792 instance=ExtResource("2_2ip7c")]
 transform = Transform3D(1.111679, 0, 0.47777593, 0, 1.21, 0, -0.47777593, 0, 1.111679, -0.011743903, -0.50158143, -0.077405155)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=162043431]
+unique_name_in_owner = true
+visible = false
+mesh = SubResource("SphereMesh_2ip7c")
 
 [node name="Interactible" type="Area3D" parent="." unique_id=508302069]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)

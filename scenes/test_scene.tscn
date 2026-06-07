@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://d2nwskj8ru5je" path="res://scenes/possibly_radioactive_book.tscn" id="5_rnaij"]
 [ext_resource type="PackedScene" uid="uid://dave3xkbacixv" path="res://scenes/possibly_radioactive_rag.tscn" id="6_h3xc6"]
 [ext_resource type="PackedScene" uid="uid://gxsljg46gjre" path="res://scenes/possibly_radioactive_cat.tscn" id="7_h3xc6"]
+[ext_resource type="Script" uid="uid://c7myln1j1soso" path="res://scenes/win_screen.gd" id="10_6qxox"]
+[ext_resource type="Script" uid="uid://dti28riewnr7j" path="res://scenes/lose_screen.gd" id="10_s36qc"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_6adnx"]
 
@@ -103,13 +105,21 @@ offset_right = 51.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("10_6qxox")
 
-[node name="Label" type="Label" parent="PanelContainer" unique_id=350499493]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=68290687]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer" unique_id=350499493]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "You win! Yay!"
 
-[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=1513742286]
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer" unique_id=252508869]
+layout_mode = 2
+text = "Next level"
+
+[node name="LoseScreen" type="PanelContainer" parent="." unique_id=1513742286]
 unique_name_in_owner = true
 visible = false
 anchors_preset = 8
@@ -123,8 +133,19 @@ offset_right = 51.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("10_s36qc")
 
-[node name="Label" type="Label" parent="PanelContainer2" unique_id=583403970]
+[node name="VBoxContainer" type="VBoxContainer" parent="LoseScreen" unique_id=1815787744]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="LoseScreen/VBoxContainer" unique_id=583403970]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "You lose. Booooo."
+
+[node name="Button" type="Button" parent="LoseScreen/VBoxContainer" unique_id=1571474715]
+layout_mode = 2
+text = "Retry"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button" to="PanelContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="LoseScreen/VBoxContainer/Button" to="LoseScreen" method="_on_button_pressed"]

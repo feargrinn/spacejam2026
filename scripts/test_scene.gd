@@ -6,7 +6,7 @@ const PATRYK_RADIOACTIVE_OBJECT = preload("uid://bffhnqe1xgyx0")
 @onready var possibly_radioactive_object: PossiblyRadioactiveObject = $PossiblyRadioactiveObject
 @onready var possibly_radioactive_object_3: PossiblyRadioactiveObject = $PossiblyRadioactiveObject3
 @onready var panel_container: PanelContainer = %PanelContainer
-@onready var panel_container_2: PanelContainer = %PanelContainer2
+@onready var panel_container_2: PanelContainer = %LoseScreen
 
 func _ready() -> void:
 	possibly_radioactive_object.set_radioactive_object(STANDARD_RADIOACTIVE_OBJECT)
