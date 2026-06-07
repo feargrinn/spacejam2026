@@ -96,16 +96,15 @@ offset_bottom = 70.0
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=891503130]
 unique_name_in_owner = true
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -291.0
-offset_top = -200.0
-offset_right = -189.0
-offset_bottom = -160.0
+offset_left = -51.0
+offset_top = -20.0
+offset_right = 51.0
+offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
