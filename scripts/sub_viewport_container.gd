@@ -1,9 +1,10 @@
 extends SubViewportContainer
 
-@onready var player: Player = $SubViewport/World/Player
+var player: Player
 
 func _ready():
 	set_process_unhandled_input(true)
+	player = Player.instance
 
 func _input(event):
 	# fix by ArdaE https://github.com/godotengine/godot/issues/17326#issuecomment-431186323
