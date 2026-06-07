@@ -4,7 +4,14 @@ const STANDARD_RADIOACTIVE_OBJECT = preload("uid://bhp30m83703xn")
 
 @onready var possibly_radioactive_object: PossiblyRadioactiveObject = $PossiblyRadioactiveObject
 @onready var possibly_radioactive_object_3: PossiblyRadioactiveObject = $PossiblyRadioactiveObject3
+@onready var panel_container: PanelContainer = $PanelContainer
 
 func _ready() -> void:
 	possibly_radioactive_object.set_radioactive_object(STANDARD_RADIOACTIVE_OBJECT)
 	possibly_radioactive_object_3.set_radioactive_object(STANDARD_RADIOACTIVE_OBJECT)
+	GroupHandler.group_emptied.connect(_on_group_emptied)
+
+
+func _on_group_emptied(group: GroupHandler.Group) -> void:
+	if group == GroupHandler.Group.BEEPERS:
+		panel_container.show()
