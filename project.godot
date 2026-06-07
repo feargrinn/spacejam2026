@@ -22,6 +22,7 @@ buses/default_bus_layout="uid://321ghm1l653k"
 [autoload]
 
 GroupHandler="*uid://chylnuy3sox1g"
+Panner="*uid://j6m48ly5ksks"
 
 [display]
 

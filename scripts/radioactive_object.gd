@@ -3,10 +3,12 @@ extends Resource
 
 enum RadiationTypeEnum {
 	STANDARD,
+	PATRYK,
 }
 
 static var radiation_resource_by_type: Dictionary[RadiationTypeEnum, RadiatonType] = {
 	RadiationTypeEnum.STANDARD : preload("res://resources/standard_radiation.tres"),
+	RadiationTypeEnum.PATRYK : preload("res://resources/patryk_radiation.tres"),
 }
 
 @export var radiation_type: RadiationTypeEnum

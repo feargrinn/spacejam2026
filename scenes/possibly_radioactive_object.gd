@@ -44,7 +44,6 @@ func set_radioactive_object(new_radioactive: RadioactiveObject) -> void:
 		GroupHandler.remove_node_from_group(self, GroupHandler.Group.BEEPERS)
 	_radioactive_object_data = new_radioactive
 	if is_radioactive():
-		print("set radioactive")
 		GroupHandler.add_node_to_group(self, GroupHandler.Group.BEEPERS)
 		beep_player.stream = _radioactive_object_data.get_audio()
 		_start_beep_timer()
