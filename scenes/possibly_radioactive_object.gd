@@ -13,6 +13,8 @@ var _is_covered := false
 @onready var beep_player: AudioStreamPlayer = $BeepPlayer
 @onready var beep_time: Timer = $BeepTime
 
+@onready var player := Player.instance
+
 
 func _ready() -> void:
 	interactible.sarcophagused.connect(sarcophaguse)
@@ -21,7 +23,6 @@ func _ready() -> void:
 
 
 func _get_distance_to_player() -> float:
-	var player := Player.instance
 	return player.global_position.distance_to(self.global_position)
 
 
@@ -34,6 +35,7 @@ func _start_beep_timer() -> void:
 
 func _on_beep_timer_timeout() -> void:
 	_start_beep_timer()
+	player.get_data().receive_radiation()
 	beep_player.play()
 
 
