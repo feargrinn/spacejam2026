@@ -4,12 +4,13 @@
 [ext_resource type="Script" uid="uid://cr3ybk4inoxs8" path="res://scripts/sub_viewport_container.gd" id="1_qjeyg"]
 [ext_resource type="PackedScene" uid="uid://bu547b6icqehh" path="res://scenes/possibly_radioactive_object.tscn" id="1_uhqqe"]
 [ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_j8ivh"]
+[ext_resource type="PackedScene" uid="uid://c35wij5uigcx4" path="res://scenes/possibly_radioactive_shoes.tscn" id="4_3qnke"]
 [ext_resource type="PackedScene" uid="uid://cvtfjonxbxjy2" path="res://scenes/radiation_counter.tscn" id="4_7ddre"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_6adnx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uhqqe"]
-albedo_color = Color(0, 0, 0, 1)
+albedo_color = Color(0.3180198, 0.31801978, 0.31801975, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ia1lp"]
 material = SubResource("StandardMaterial3D_uhqqe")
@@ -56,12 +57,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1669717, 0, -6.580105)
 [node name="PossiblyRadioactiveObject3" parent="SubViewportContainer/SubViewport/TestScene" unique_id=750198486 instance=ExtResource("1_uhqqe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.7051773, 0, -9.200668)
 
+[node name="PossiblyRadioactiveObject4" parent="SubViewportContainer/SubViewport/TestScene" unique_id=138050042 instance=ExtResource("1_uhqqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.704687, 0, 16.81416)
+
+[node name="PossiblyRadioactiveObject5" parent="SubViewportContainer/SubViewport/TestScene" unique_id=989555199 instance=ExtResource("4_3qnke")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9679623, 0, 3.4987793)
+
 [node name="Player" parent="SubViewportContainer/SubViewport/TestScene" unique_id=81183360 instance=ExtResource("2_j8ivh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.570595, 0.47477365, 4.0453396)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="SubViewportContainer/SubViewport/TestScene" unique_id=495226296]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 omni_range = 100.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport/TestScene" unique_id=1710362466]
+transform = Transform3D(1, 0, 0, 0, -0.34724668, 0.9377738, 0, -0.9377738, -0.34724668, 0, 7.9966507, 0)
+sky_mode = 1
 
 [node name="RadiationCounter" parent="." unique_id=484867935 instance=ExtResource("4_7ddre")]
 anchors_preset = 10
@@ -72,6 +83,7 @@ offset_right = 0.0
 offset_bottom = 70.0
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=891503130]
+unique_name_in_owner = true
 visible = false
 anchors_preset = 8
 anchor_left = 0.5

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cvsfktqxsohbw"]
+
+[ext_resource type="PackedScene" uid="uid://cyxkbbuy4aedu" path="res://assets/sewer/koniec_korytarza.glb" id="1_tfgot"]
+[ext_resource type="PackedScene" uid="uid://c2iiv7hdbjewa" path="res://assets/sewer/korytarz.glb" id="2_g4qob"]
+[ext_resource type="PackedScene" uid="uid://ccdnmq15v8kpx" path="res://assets/sewer/pokoj.glb" id="3_ut7p8"]
+[ext_resource type="PackedScene" uid="uid://coal3gydh1ak3" path="res://assets/sewer/rog_pokoju.glb" id="4_y86jy"]
+[ext_resource type="PackedScene" uid="uid://bp1sgwvxo20bp" path="res://assets/sewer/t_section.glb" id="5_ks3te"]
+
+[node name="MeshLibrarySewer" type="Node3D" unique_id=1873699535]
+
+[node name="koniec_korytarza" parent="." unique_id=891215468 instance=ExtResource("1_tfgot")]
+
+[node name="korytarz" parent="." unique_id=274406997 instance=ExtResource("2_g4qob")]
+
+[node name="pokoj" parent="." unique_id=1874454338 instance=ExtResource("3_ut7p8")]
+
+[node name="rog_pokoju" parent="." unique_id=453671740 instance=ExtResource("4_y86jy")]
+
+[node name="t_section" parent="." unique_id=449891388 instance=ExtResource("5_ks3te")]

@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c35wij5uigcx4"]
+
+[ext_resource type="Script" uid="uid://dh6vagxv8vbqa" path="res://scenes/possibly_radioactive_object.gd" id="1_8umsk"]
+[ext_resource type="Script" uid="uid://j74fopjeymgt" path="res://scripts/interactible.gd" id="2_idbrk"]
+[ext_resource type="PackedScene" uid="uid://cjnblydk2t7n5" path="res://assets/shoes.glb" id="2_n4fo2"]
+[ext_resource type="AudioStream" uid="uid://ydt8px18tgmy" path="res://assets/radiation_single_click.mp3" id="3_n4fo2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e1qsd"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_phjq4"]
+radius = 1.0
+
+[node name="PossiblyRadioactiveObject" type="Node3D" unique_id=1969775759]
+script = ExtResource("1_8umsk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=251427347]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=573261307]
+shape = SubResource("BoxShape3D_e1qsd")
+
+[node name="shoes" parent="StaticBody3D" unique_id=505316047 instance=ExtResource("2_n4fo2")]
+transform = Transform3D(2.295, 0, 0, 0, 2.295, 0, 0, 0, 2.295, 0.05446148, -0.47690472, -0.05865121)
+
+[node name="Interactible" type="Area3D" parent="." unique_id=508302069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+monitorable = false
+script = ExtResource("2_idbrk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactible" unique_id=1984150702]
+shape = SubResource("SphereShape3D_phjq4")
+
+[node name="BeepPlayer" type="AudioStreamPlayer" parent="." unique_id=2045927662]
+stream = ExtResource("3_n4fo2")
+max_polyphony = 20
+
+[node name="BeepTime" type="Timer" parent="." unique_id=1765732832]

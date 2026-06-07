@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c6owyq6cvb53c"]
+
+[ext_resource type="MeshLibrary" uid="uid://rhmlxbranfwj" path="res://mesh_library_sewer.tres" id="1_b27ji"]
+
+[node name="Node3D" type="Node3D" unique_id=298140336]
+
+[node name="GridMap" type="GridMap" parent="." unique_id=768168326]
+mesh_library = ExtResource("1_b27ji")
