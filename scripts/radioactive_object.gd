@@ -34,6 +34,6 @@ func calculate_time_to_beep(distance: float) -> float:
 
 
 func randomised_beep_time(distance: float) -> float:
-	const RANDOM_FACTOR = 0.3
+	const RANDOM_FACTOR = 4.0
 	var base_time_to_beep := calculate_time_to_beep(distance)
-	return base_time_to_beep * randf_range(1.0 - RANDOM_FACTOR, 1.0 + RANDOM_FACTOR)
+	return base_time_to_beep * randf_range(1.0 / RANDOM_FACTOR, RANDOM_FACTOR)

@@ -27,13 +27,11 @@ func _get_distance_to_player() -> float:
 func _start_beep_timer() -> void:
 	if not is_radioactive():
 		return
-	var frequency := _radioactive_object_data.calculate_beep_frequency(_get_distance_to_player())
-	print("time to click: ", 1.0 / frequency)
-	beep_time.start(1.0 / frequency)
+	var ttb := _radioactive_object_data.randomised_beep_time(_get_distance_to_player())
+	beep_time.start(ttb)
 
 
 func _on_beep_timer_timeout() -> void:
-	print("beep")
 	_start_beep_timer()
 	beep_player.play()
 

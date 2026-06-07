@@ -7,3 +7,4 @@ const STANDARD_RADIOACTIVE_OBJECT = preload("uid://bhp30m83703xn")
 
 func _ready() -> void:
 	possibly_radioactive_object.set_radioactive_object(STANDARD_RADIOACTIVE_OBJECT)
+	possibly_radioactive_object_3.set_radioactive_object(STANDARD_RADIOACTIVE_OBJECT)
