@@ -30,12 +30,15 @@ const PLAYER_DATA = preload("res://resources/player.tres")
 
 
 func _init() -> void:
+	if instance:
+		return
 	instance = self
 	_player_data = PLAYER_DATA
 
 
 func _ready() -> void:
-	capture_mouse()
+	if instance == self:
+		capture_mouse()
 
 
 func _unhandled_input(event: InputEvent) -> void:

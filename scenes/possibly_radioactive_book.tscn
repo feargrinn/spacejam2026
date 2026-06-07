@@ -12,7 +12,7 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_phjq4"]
 radius = 1.0
 
-[node name="PossiblyRadioactiveObject" type="Node3D" unique_id=1969775759]
+[node name="PossiblyRadioactiveObject2" type="Node3D" unique_id=1969775759]
 script = ExtResource("1_2ip7c")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=251427347]

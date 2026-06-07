@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cosewsxakxwin"]
+[gd_scene format=3 uid="uid://bsj42ct1ocxt"]
 
 [ext_resource type="MeshLibrary" uid="uid://cct8bnpfrligt" path="res://mesh_library_sewer.tres" id="1_bjgrc"]
 [ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_fud11"]

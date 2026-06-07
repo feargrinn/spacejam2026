@@ -3,6 +3,8 @@ extends SubViewportContainer
 var player: Player
 
 func _ready():
+	if (player):
+		return
 	set_process_unhandled_input(true)
 	player = Player.instance
 

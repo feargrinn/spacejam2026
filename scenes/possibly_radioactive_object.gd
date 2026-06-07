@@ -20,6 +20,9 @@ func _ready() -> void:
 	interactible.sarcophagused.connect(sarcophaguse)
 	beep_time.timeout.connect(_on_beep_timer_timeout)
 	_start_beep_timer()
+	if (is_radioactive()):
+		if ! self in get_tree().get_nodes_in_group("beepers"):
+			GroupHandler.add_node_to_group(self, GroupHandler.Group.BEEPERS)
 
 
 func _get_distance_to_player() -> float:

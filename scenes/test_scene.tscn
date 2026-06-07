@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://gxsljg46gjre" path="res://scenes/possibly_radioactive_cat.tscn" id="7_h3xc6"]
 [ext_resource type="Script" uid="uid://c7myln1j1soso" path="res://scenes/win_screen.gd" id="10_6qxox"]
 [ext_resource type="Script" uid="uid://dti28riewnr7j" path="res://scenes/lose_screen.gd" id="10_s36qc"]
+[ext_resource type="PackedScene" uid="uid://b8lp053fft7od" path="res://scenes/controls.tscn" id="12_gthg3"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_6adnx"]
 
@@ -41,9 +42,9 @@ handle_input_locally = false
 physics_object_picking = true
 size = Vector2i(160, 120)
 render_target_update_mode = 4
+script = ExtResource("1_nd71p")
 
 [node name="TestScene" type="Node3D" parent="SubViewportContainer/SubViewport" unique_id=777740144]
-script = ExtResource("1_nd71p")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="SubViewportContainer/SubViewport/TestScene" unique_id=1249241266]
 
@@ -146,6 +147,8 @@ text = "You lose. Booooo."
 [node name="Button" type="Button" parent="LoseScreen/VBoxContainer" unique_id=1571474715]
 layout_mode = 2
 text = "Retry"
+
+[node name="Controls" parent="." unique_id=1979541818 instance=ExtResource("12_gthg3")]
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Button" to="PanelContainer" method="_on_button_pressed"]
 [connection signal="pressed" from="LoseScreen/VBoxContainer/Button" to="LoseScreen" method="_on_button_pressed"]
