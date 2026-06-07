@@ -23,11 +23,15 @@ var walk_vel: Vector3 # Walking velocity
 var grav_vel: Vector3 # Gravity velocity 
 var jump_vel: Vector3 # Jumping velocity
 
+var _player_data: PlayerData
+const PLAYER_DATA = preload("res://resources/player.tres")
+
 @onready var camera: Camera3D = $Camera
 
 
 func _init() -> void:
 	instance = self
+	_player_data = PLAYER_DATA
 
 
 func _ready() -> void:
@@ -55,6 +59,9 @@ func capture_mouse() -> void:
 func release_mouse() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	mouse_captured = false
+
+func get_data() -> PlayerData:
+	return _player_data
 
 func _rotate_camera(sens_mod: float = 1.0) -> void:
 	camera.rotation.y -= look_dir.x * camera_sens * sens_mod

@@ -35,5 +35,6 @@ shape = SubResource("SphereShape3D_phjq4")
 [node name="BeepPlayer" type="AudioStreamPlayer" parent="." unique_id=2045927662]
 stream = ExtResource("3_etvlx")
 max_polyphony = 20
+bus = &"Panner"
 
 [node name="BeepTime" type="Timer" parent="." unique_id=1765732832]
