@@ -1,10 +1,11 @@
 [gd_resource type="Resource" script_class="RadiatonType" format=3 uid="uid://cgiw4eebvo6iv"]
 
 [ext_resource type="Script" uid="uid://2svhaaogfqvp" path="res://scripts/radiation_type.gd" id="1_dfy16"]
-[ext_resource type="AudioStream" uid="uid://c55e7um2v7q0w" path="res://assets/radiation_sound.mp3" id="1_prpqt"]
+[ext_resource type="AudioStream" uid="uid://ydt8px18tgmy" path="res://assets/radiation_single_click.mp3" id="1_prpqt"]
 
 [resource]
 script = ExtResource("1_dfy16")
 name = "standard"
 audio_file = ExtResource("1_prpqt")
+falloff = 1.0
 metadata/_custom_type_script = "uid://2svhaaogfqvp"

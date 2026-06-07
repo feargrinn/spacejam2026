@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="RadioactiveObject" format=3 uid="uid://bhp30m83703xn"]
+
+[ext_resource type="Script" uid="uid://bj74i8wwkdhh4" path="res://scripts/radioactive_object.gd" id="1_8rc5v"]
+
+[resource]
+script = ExtResource("1_8rc5v")
+beep_frequency = 500.0
+metadata/_custom_type_script = "uid://bj74i8wwkdhh4"

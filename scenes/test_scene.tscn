@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://cybd540f5p1xy"]
 
+[ext_resource type="Script" uid="uid://bqj2wml3ocxdc" path="res://scripts/test_scene.gd" id="1_nd71p"]
 [ext_resource type="PackedScene" uid="uid://bu547b6icqehh" path="res://scenes/possibly_radioactive_object.tscn" id="1_uhqqe"]
 [ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_j8ivh"]
+[ext_resource type="PackedScene" path="res://scenes/radiation_counter.tscn" id="4_7ddre"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_6adnx"]
 
@@ -13,6 +15,7 @@ material = SubResource("StandardMaterial3D_uhqqe")
 size = Vector2(100, 100)
 
 [node name="TestScene" type="Node3D" unique_id=777740144]
+script = ExtResource("1_nd71p")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1249241266]
 
@@ -37,3 +40,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.570595, 0.47477365, 4.0453
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=495226296]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 omni_range = 100.0
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=891503130]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.0
+offset_top = -20.0
+offset_right = 51.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=350499493]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "You win! Yay!"
+
+[node name="RadiationCounter" parent="." unique_id=484867935 instance=ExtResource("4_7ddre")]
+anchors_preset = 10
+anchor_left = 0.0
+anchor_right = 1.0
+offset_left = 0.0
+offset_right = 0.0
