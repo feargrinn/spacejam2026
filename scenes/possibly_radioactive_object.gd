@@ -6,6 +6,7 @@ const BEEPERS: StringName = "beepers"
 @export var _radioactive_object_data: RadioactiveObject
 var sarcophagi_count := 0
 var sarcophagi: Array[MeshInstance3D]
+var _is_covered := false
 
 @onready var interactible: Interactible = $Interactible
 @onready var mesh_instance_3d: MeshInstance3D = $StaticBody3D/MeshInstance3D
@@ -48,7 +49,9 @@ func set_radioactive_object(new_radioactive: RadioactiveObject) -> void:
 
 
 func is_radioactive() -> bool:
-	return _radioactive_object_data != null
+	if _radioactive_object_data == null:
+		return false
+	return !_is_covered
 
 
 func get_radioactive_data() -> RadioactiveObject:
@@ -59,12 +62,19 @@ func get_radiation_type_enum() -> RadioactiveObject.RadiationTypeEnum:
 	return _radioactive_object_data.radiation_type
 
 
+func stop_radioactivity() -> void:
+	_is_covered = true
+	beep_time.stop()
+	GroupHandler.remove_node_from_group(self, GroupHandler.Group.BEEPERS)
+
+
 func sarcophaguse() -> void:
 	var new_mesh := mesh_instance_3d.duplicate()
 	add_child(new_mesh)
 	new_mesh.global_position = mesh_instance_3d.global_position
 	new_mesh.global_basis = mesh_instance_3d.global_basis
 	sarcophagi_count += 1
+	stop_radioactivity()
 	for i in range(sarcophagi_count):
 		new_mesh.scale *= 1.1;
 	sarcophagi.append(new_mesh)

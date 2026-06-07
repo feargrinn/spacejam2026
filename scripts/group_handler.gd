@@ -1,7 +1,8 @@
 extends Node
 
-signal node_added_to_group(node: Node, group: StringName)
-signal node_removed_from_group(node: Node, group: StringName)
+signal node_added_to_group(node: Node, group: Group)
+signal node_removed_from_group(node: Node, group: Group)
+signal group_emptied(group: Group)
 
 enum Group {
 	BEEPERS,
@@ -20,3 +21,5 @@ func add_node_to_group(node: Node, group: Group) -> void:
 func remove_node_from_group(node: Node, group: Group) -> void:
 	node.remove_from_group(GROUP_NAME_BY_GROUP_ENUM[group])
 	node_removed_from_group.emit(node, group)
+	if get_tree().get_nodes_in_group(GROUP_NAME_BY_GROUP_ENUM[group]) == []:
+		group_emptied.emit(group)
