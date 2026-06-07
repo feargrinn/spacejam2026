@@ -4,5 +4,5 @@
 
 [resource]
 script = ExtResource("1_8rc5v")
-radiation_strength = 20.0
+beep_frequency = 500.0
 metadata/_custom_type_script = "uid://bj74i8wwkdhh4"

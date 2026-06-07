@@ -1,6 +1,9 @@
-class_name Player extends CharacterBody3D
+class_name Player
+extends CharacterBody3D
 
 signal tried_interacting
+
+static var instance: Player
 
 @export_range(1, 35, 1) var speed: float = 10 # m/s
 @export_range(10, 400, 1) var acceleration: float = 100 # m/s^2
@@ -22,8 +25,14 @@ var jump_vel: Vector3 # Jumping velocity
 
 @onready var camera: Camera3D = $Camera
 
+
+func _init() -> void:
+	instance = self
+
+
 func _ready() -> void:
 	capture_mouse()
+
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:

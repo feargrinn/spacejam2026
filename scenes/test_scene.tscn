@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cybd540f5p1xy"]
 
+[ext_resource type="Script" uid="uid://bqj2wml3ocxdc" path="res://scripts/test_scene.gd" id="1_nd71p"]
 [ext_resource type="PackedScene" uid="uid://bu547b6icqehh" path="res://scenes/possibly_radioactive_object.tscn" id="1_uhqqe"]
 [ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_j8ivh"]
 
@@ -13,6 +14,7 @@ material = SubResource("StandardMaterial3D_uhqqe")
 size = Vector2(100, 100)
 
 [node name="TestScene" type="Node3D" unique_id=777740144]
+script = ExtResource("1_nd71p")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1249241266]
 
