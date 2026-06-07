@@ -6,14 +6,17 @@
 [ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_j8ivh"]
 [ext_resource type="PackedScene" uid="uid://c35wij5uigcx4" path="res://scenes/possibly_radioactive_shoes.tscn" id="4_3qnke"]
 [ext_resource type="PackedScene" uid="uid://cvtfjonxbxjy2" path="res://scenes/radiation_counter.tscn" id="4_7ddre"]
+[ext_resource type="PackedScene" uid="uid://d2nwskj8ru5je" path="res://scenes/possibly_radioactive_book.tscn" id="5_rnaij"]
+[ext_resource type="PackedScene" uid="uid://dave3xkbacixv" path="res://scenes/possibly_radioactive_rag.tscn" id="6_h3xc6"]
+[ext_resource type="PackedScene" uid="uid://gxsljg46gjre" path="res://scenes/possibly_radioactive_cat.tscn" id="7_h3xc6"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_6adnx"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uhqqe"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s36qc"]
 albedo_color = Color(0.3180198, 0.31801978, 0.31801975, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ia1lp"]
-material = SubResource("StandardMaterial3D_uhqqe")
+material = SubResource("StandardMaterial3D_s36qc")
 size = Vector2(100, 100)
 
 [node name="Main" type="Node" unique_id=457065144]
@@ -62,6 +65,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.704687, 0, 16.81416)
 
 [node name="PossiblyRadioactiveObject5" parent="SubViewportContainer/SubViewport/TestScene" unique_id=989555199 instance=ExtResource("4_3qnke")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9679623, 0, 3.4987793)
+
+[node name="PossiblyRadioactiveObject6" parent="SubViewportContainer/SubViewport/TestScene" unique_id=1339774412 instance=ExtResource("5_rnaij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.93685555, 0, 2.2639184)
+
+[node name="PossiblyRadioactiveObject7" parent="SubViewportContainer/SubViewport/TestScene" unique_id=392103002 instance=ExtResource("6_h3xc6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7576416, 1.1920929e-07, -0.64251685)
+
+[node name="PossiblyRadioactiveObject8" parent="SubViewportContainer/SubViewport/TestScene" unique_id=1063202585 instance=ExtResource("7_h3xc6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2579408, -2.3841858e-07, -2.5309114)
 
 [node name="Player" parent="SubViewportContainer/SubViewport/TestScene" unique_id=81183360 instance=ExtResource("2_j8ivh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.570595, 0.47477365, 4.0453396)
