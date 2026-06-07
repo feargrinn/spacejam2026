@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://d2nwskj8ru5je"]
+
+[ext_resource type="Script" uid="uid://dh6vagxv8vbqa" path="res://scenes/possibly_radioactive_object.gd" id="1_2ip7c"]
+[ext_resource type="PackedScene" uid="uid://bbjxg2wsiyyyr" path="res://assets/book.glb" id="2_2ip7c"]
+[ext_resource type="Script" uid="uid://j74fopjeymgt" path="res://scripts/interactible.gd" id="3_8daut"]
+[ext_resource type="AudioStream" uid="uid://ydt8px18tgmy" path="res://assets/radiation_single_click.mp3" id="4_gbvbt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e1qsd"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_phjq4"]
+radius = 1.0
+
+[node name="PossiblyRadioactiveObject" type="Node3D" unique_id=1969775759]
+script = ExtResource("1_2ip7c")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=251427347]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=573261307]
+shape = SubResource("BoxShape3D_e1qsd")
+
+[node name="book" parent="StaticBody3D" unique_id=159372792 instance=ExtResource("2_2ip7c")]
+transform = Transform3D(1.111679, 0, 0.47777593, 0, 1.21, 0, -0.47777593, 0, 1.111679, -0.011743903, -0.50158143, -0.077405155)
+
+[node name="Interactible" type="Area3D" parent="." unique_id=508302069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+monitorable = false
+script = ExtResource("3_8daut")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactible" unique_id=1984150702]
+shape = SubResource("SphereShape3D_phjq4")
+
+[node name="BeepPlayer" type="AudioStreamPlayer" parent="." unique_id=2045927662]
+stream = ExtResource("4_gbvbt")
+max_polyphony = 20
+
+[node name="BeepTime" type="Timer" parent="." unique_id=1765732832]
